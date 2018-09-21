@@ -18,7 +18,7 @@ switch (role) {
     case 'moderator':
         console.log('moderator user');
         break;
-    default:
+    default:          //catch all if nothing matches.
         console.log('unknown user');
 }
 //Can do same w/if..else. Mosh prefers if..else. 
@@ -32,3 +32,25 @@ while (i <= 5) {
     if (i % 2 !== 0) console.log(i); //odd numbers
     i++;
 }
+
+//do..while - always executed at least once.
+//not as common as while and for loop, but use if needed.
+let j = 1;
+do {
+    if (j % 2 !== 0) console.log(j); //odd numbers
+    j++;
+} while (j <= 5);
+
+//for-in loop. iterate over the properties of an object.
+const person = {
+    name: 'mosh',
+    age: 30
+};
+for (let key in person)
+    console.log(key, person[key]);  //note bracket notation since we do not
+                                    //know property. if we did then dot notation.
+//can use this to iterate over arrays but better to use for..of loop.
+const colors = ['red', 'blue', 'green'];
+for (let color of colors)
+    console.log(color);  //no index required. color gets value as it iterates.
+                             
