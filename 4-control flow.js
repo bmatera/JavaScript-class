@@ -21,7 +21,7 @@ switch (role) {
     default:          //catch all if nothing matches.
         console.log('unknown user');
 }
-//Can do same w/if..else. Mosh prefers if..else. 
+//Mosh prefers if..else over the switch statement. shows cleaner.
 //for loop
 for (let i = 1; i <= 5; i++) 
     if (i % 2 !== 0) console.log(i); //odd numbers
@@ -50,7 +50,12 @@ for (let key in person)
     console.log(key, person[key]);  //note bracket notation since we do not
                                     //know property. if we did then dot notation.
 //can use this to iterate over arrays but better to use for..of loop.
+
+//for-of loop. iterate over an array.
 const colors = ['red', 'blue', 'green'];
 for (let color of colors)
     console.log(color);  //no index required. color gets value as it iterates.
-                             
+// use break to jump out of a loop
+// use continue to jump to next iteration. Don't see this much. Do not
+// recommend using as it's an old style technique.
+
