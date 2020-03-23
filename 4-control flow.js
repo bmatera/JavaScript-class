@@ -23,6 +23,7 @@ switch (role) {
 }
 //Mosh prefers if..else over the switch statement. shows cleaner.
 //for loop
+
 for (let i = 1; i <= 5; i++) 
     if (i % 2 !== 0) console.log(i); //odd numbers
 

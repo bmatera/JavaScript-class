@@ -26,7 +26,7 @@ const interestRate = .03;
    // interestRate = .01; error, cannot reassign.
 console.log(interestRate);
 
-//Objects
+//Objects - related properties are grouped into an object. key/value pairs to define properties.
 let person = {
     weight : 175,
     height : 60

@@ -27,7 +27,7 @@ console.log(z>0);
 console.log(z>=1);
 console.log(z<1);
 console.log(z<=1);
-console.log(z===1);
+console.log(z===1);  //see next code, could use == for lose equality.
 console.log(z!==1);
 
 //equality operators
@@ -39,8 +39,8 @@ console.log(true ==  1); //1 is converted to boolean, so results in (true).
 
 //ternary operator - if then else shorthand
 let points = 110;
-let type = points > 100 ? 'gold' : 'silver';
-console.log(type);
+let type = points > 100 ? 'gold' : 'silver'; //if true then gold otherwise Silver
+console.log(type);                           //gold
 
 //logical operators
 //logical AND (&&) - returns true if both operands are true, otherwise its false.
@@ -90,6 +90,7 @@ const executePermission = 1;
 
 let myPermission = 0;
 myPermission = myPermission | readPermission; //use OR to assign permission
+console.log(myPermission);
 
 let message = 
   (myPermission & readPermission) ? 'yes' : 'no'; //use AND to check permission
