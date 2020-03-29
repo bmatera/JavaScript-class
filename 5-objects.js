@@ -50,5 +50,56 @@ function Circle(radius) {        //use pascal naming, first letter capital for e
 const myCircle = new Circle(3);  //myCircle points to new object instance w/radius 3. 
 console.log(myCircle);
 
+myCircle.color = 'Yellow';      //assign a new property to a circle
+myCircle.draw = function() {};  //assign a new function
+console.log(myCircle);          //console will show above in circle object
+
+//JavaScript has two kinds of types: Primitives (value) and Reference types.
+    //Primitives: number, string, boolean, symbol, undefined, null
+    //Reference types: object, function, array
+let x1 = 10;  //variable assigned a primitive
+let y1 = x1;  //That same primitive is assigned to another variable.
+x1 = 20;      //x1=20 but y1 still equals 10
+//go to console and see x1 = 20 and y1 = 10. These are independent variables. Value of x is copied into y.
+
+let x2 = {value: 10};   //now we create an object called value and assign to x2. x2 contains an address.
+let y2 = x2;            //y2 is assigned to same object as x2. Both x2 and y2 are point to same object.
+x2.value = 20;          //change value of object and both x2 and y2 will show same value in console b/c they point to same object
+
+//another example with paramater passing.
+let x3 = 10;
+function increase(x3) {
+    x3++;                 //x3 is local to this function.
+}
+increase(x3);
+console.log(x3);          //this x3 is the value outside of function increase
+
+let obj = {value: 10};    //same as above but this time using an object.
+function increase (obj) {
+    obj.value++;
+}
+increase(obj);
+console.log(obj.value);  //this object is defined outside the function and updated inside the function.
+
+//enumerating properties of an object
+const circle3 = {    //first define an object called circle1 that has a property and method
+    radius: 1,
+    draw() {
+        console.log('draw');
+    }
+}
+for (let key in circle3)   //use let .. in to iterate over an object.
+    console.log(key, circle3[key]);  //get key and value.
+
+for (let key of Object.keys(circle3))  //can iterate of object properties
+    console.log(key);
+
+for (let entry of Object.entries(circle3))  //can iterate of object properties
+    console.log(entry);
+
+if ('radius' in circle3) console.log('yes');  //check if property is in an object.
+
+
+
 
 
