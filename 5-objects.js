@@ -10,7 +10,7 @@ const circle = {
     },
     isVisible: true,
     draw: function () {  //function is called a method when part of an object.
-        console.log('draw');
+        console.log('draw1');
     }
 };
 
@@ -30,7 +30,7 @@ function createCircle(radius) {    //use camel case when naming
     //      console.log("draw")
     //  }
         draw() {                 //function, aka method, in object. behavior part of object.  
-            console.log("draw")
+            console.log("draw2")
         }
     }
 }
@@ -47,7 +47,7 @@ function Circle(radius) {        //use pascal naming, first letter capital for e
         console.log("draw")
     }
 }
-const myCircle = new Circle(3);  //myCircle points to new object instance. 
+const myCircle = new Circle(3);  //myCircle points to new object instance w/radius 3. 
 console.log(myCircle);
 
 
