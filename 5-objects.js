@@ -88,13 +88,13 @@ const circle3 = {    //first define an object called circle1 that has a property
         console.log('draw');
     }
 }
-for (let key in circle3)   //use let .. in to iterate over an object.
+for (let key in circle3)   //use let .. in to iterate over an object. easiest way to iterate over an object
     console.log(key, circle3[key]);  //get key and value.
 
-for (let key of Object.keys(circle3))  //can iterate of object properties
+for (let key of Object.keys(circle3))  //However, can iterate of object properties using let..of by iterating over keys
     console.log(key);
 
-for (let entry of Object.entries(circle3))  //can iterate of object properties
+for (let entry of Object.entries(circle3))  //same as above but now iterating over entries.
     console.log(entry);
 
 if ('radius' in circle3) console.log('yes');  //check if property is in an object.
