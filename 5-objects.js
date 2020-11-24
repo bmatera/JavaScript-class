@@ -2,9 +2,9 @@
 //          Define the objects data and behavior.
 //The value of a key/value pair can be anything in javascript.
 // circle is an object. Use let or const. 
-const circle = {
+const circle = {   //note, const refers to object circle. circle cannot be reassigned.
     radius: 1,
-    location: {  //embedded object.
+    location: {    //embedded object.
         x: 1,
         y: 1
     },
@@ -54,6 +54,7 @@ myCircle.color = 'Yellow';      //assign a new property to a circle
 myCircle.draw = function() {};  //assign a new function
 console.log(myCircle);          //console will show above in circle object
 
+//Value vs Reference Objects
 //JavaScript has two kinds of types: Primitives (value) and Reference types.
     //Primitives: number, string, boolean, symbol, undefined, null
     //Reference types: object, function, array
@@ -99,6 +100,7 @@ for (let entry of Object.entries(circle3))  //same as above but now iterating ov
 
 if ('radius' in circle3) console.log('yes');  //check if property is in an object.
 
+//cloning an object
 
 
 

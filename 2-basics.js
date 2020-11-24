@@ -12,6 +12,7 @@ console.log(name);
 
 //Primitives and Reference types:
 // Primitives: string, number, Boolean, undefined, null.  ES6 has another called symbol and will learn about that later in course.
+// Integers, decimal, float are all of type numbers. No different types.
 // Reference types: Object, Arrays, Functions
 // If variable is not initialized its value is undefined.
 // Use null where you want to clear the value of a variable. 
@@ -23,7 +24,7 @@ console.log(name);
 
 //Constants 
 const interestRate = .03;
-   // interestRate = .01; error, cannot reassign.
+//interestRate = .01; error, cannot reassign.
 console.log(interestRate);
 
 //Objects - related properties are grouped into an object. key/value pairs to define properties.
