@@ -58,5 +58,3 @@ function square(number) {    //number is parameter, local to function.
 }
 greet('John', 'Smith');      //passing two arguments
 console.log(square(2));      //two function calls, one to square and one to log
-
-//change for git
