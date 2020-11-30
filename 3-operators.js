@@ -51,13 +51,13 @@ console.log(false || true);
 console.log(false || !true);
 
 //logical operators, non-boolean (Falsy and truthy)
-//falsy - undefined, null, 0, false, '', NaN (Not a Number)
+//falsy - undefined, null, 0, false, '' (empty string), NaN (Not a Number)
 //truthy - anything that is not falsy.
 console.log(false || true);
 console.log(false || 'bill'); //bill is not falsy so truthy
 console.log(false || 1);      //1 is not falsy so truthy
  //logical OR continues until it finds true or truthy or end, then exits on that value
- console.log(false || 1 || 2);  //short circuits to 1. 
+ console.log(false || 1 || 2);  //short circuits to 1 b/c truthy
  //if truthy value is found then its returned.
  //use case - provide default value
  let userColor = 'red';  //can change to undefined, then blue becomes currentColor

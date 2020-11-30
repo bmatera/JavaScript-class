@@ -12,8 +12,8 @@ console.log(name);
 
 //Primitives and Reference types:
 // Primitives: string, number, Boolean, undefined, null.  ES6 has another called symbol and will learn about that later in course.
-// Integers, decimal, float are all of type numbers. No different types.
-// Reference types: Object, Arrays, Functions
+  // Integers, decimal, float are all of type numbers. No different types.
+  // Reference types: Object, Arrays, Functions
 // If variable is not initialized its value is undefined.
 // Use null where you want to clear the value of a variable. 
 // JavaScript does not have decimal or floating point data types. Integers, floats, decimal are all of type: number.
@@ -43,18 +43,21 @@ console.log(person.weight);
 //Arrays
 // Arrays are dynamic. That means length and variable type can change at runtime.
 // Technically an array is an object. Do typeof in console to see it!
+// As an object it inherits all object properties visible in dot notation.
 let selectedColors = ['red', 'blue'];
 selectedColors[2] = 1;       //adding diff datatype.
 console.log(selectedColors); //see object in console. 
 console.log(selectedColors.length); //use dot notation to see all properties
 
 //Functions
-function greet(name, lastName) {
+function greet(name, lastName) {      //name, lastname are parameters, arguments are in call statement.
     console.log('Hello '+name+' '+lastName);
 }
+
+greet('John', 'Smith');      //passing two arguments
 
 function square(number) {    //number is parameter, local to function.
     return number*number;
 }
-greet('John', 'Smith');      //passing two arguments
+
 console.log(square(2));      //two function calls, one to square and one to log
