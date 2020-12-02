@@ -24,9 +24,9 @@ switch (role) {
 //Mosh prefers if..else over the switch statement. shows cleaner.
 //for loop
 
-for (let i = 1; i <= 5; i++) 
+for (let i = 1; i <= 5; ++i) 
     if (i % 2 !== 0) console.log(i); //odd numbers
-
+    
 //while loop - the for loop above in a while loop.
 let i = 1;
 while (i <= 5) {

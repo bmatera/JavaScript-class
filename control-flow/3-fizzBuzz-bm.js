@@ -5,7 +5,7 @@
 //not divisible by 3 or 5 => number
 //not a number => 'not a number'
 
-let output = fizzBuzz(15);
+let output = fizzBuzz(30);
 console.log(output);
 
 function fizzBuzz(input) {
