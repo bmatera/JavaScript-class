@@ -5,9 +5,10 @@ for (i=0; i<10; i++)
 console.log('myArray = ' + myArray);
 console.log(myArray[5]);
 console.log(myArray.length-1);
-// for (let element of myArray) {
-//     console.log(element);
-// }
+
+for (let element of myArray) {
+    console.log(element);
+}
 
 
 console.log('reverse order')
