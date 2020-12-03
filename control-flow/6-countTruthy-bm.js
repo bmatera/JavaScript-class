@@ -1,5 +1,5 @@
 //falsey values = undefined, null, '', false, 0, NaN.  Everything else is a truthy.
-const myArray = [1, 2, 3, 5, true, null, undefined, NaN, '', false, 0];
+const myArray = [1, 2, 3, 5, true, null, undefined, NaN, '', false, 0, 'Bill', 'John'];
 console.log(countTruthy(myArray));
 
 function countTruthy (array) {

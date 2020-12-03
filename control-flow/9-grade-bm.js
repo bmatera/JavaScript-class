@@ -1,11 +1,11 @@
 //calculate grade
-// 1-59 : F
+// 0-59 : F
 //60-69 : D
 //70-79 : C
 //80-89 : B
 //90-100: A
 
-const marks = [80, 80, 100];
+const marks = [80, 90, 100];
 
 console.log(calculateGrade(marks));
 

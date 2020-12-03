@@ -2,7 +2,7 @@
 //multiples of 3: 3, 6, 9, 12, ...
 //multiples of 5: 5, 10, 15, ...
 
-console.log(sum(10));
+console.log(sum(100));
 
 function sum(limit) {
   let sum = 0;

@@ -15,7 +15,7 @@ function showPrimes(limit) {
         //loop to determine if prime by checking factors
         let isPrime = true;
         for (let factor = 2; factor < number; factor++) {  //check if factors exist other then 1 and itself. 
-            if (number % factor === 0) {  //if factor exists then isPrime is false.
+            if (number % factor === 0) {  //if divides evenly then a factor, isPrime = false
                 isPrime = false;
                 break;
             }
@@ -23,4 +23,4 @@ function showPrimes(limit) {
         if (isPrime) console.log(number);
     }
 }
-//Mosh creates a separate function to determine is a number is prime. 
+//Mosh creates a separate function to determine if a number is prime. 
