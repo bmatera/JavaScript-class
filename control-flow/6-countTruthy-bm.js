@@ -1,4 +1,5 @@
-//falsey values = undefined, null, '', false, 0, NaN.  Everything else is a truthy.
+//falsey values = undefined, null, '', false, 0, -0, 0n, NaN.  Everything else is a truthy.
+//A falsy (sometimes written falsey) value is a value that is considered false when encountered in a Boolean context.
 const myArray = [1, 2, 3, 5, true, null, undefined, NaN, '', false, 0, 'Bill', 'John'];
 console.log(countTruthy(myArray));
 

@@ -9,6 +9,7 @@ console.log(name);
 // - variable names are case sensitive.
 // - modern best practice is to declare each variable on separate line. 
 //   You can declare on one line with comma separation, but don't.
+// - modern javascript is to use let not var.
 
 //Primitives and Reference types:
 // Primitives: string, number, Boolean, undefined, null.  ES6 has another called symbol and will learn about that later in course.
