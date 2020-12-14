@@ -4,7 +4,6 @@
 //$$$ - expensive (21 - 50 dollars)
 
 //create and array of objects
-
 let priceRanges = [
     {label: '$', toolTip: "inexpensive", minPerPerson: 0, maxPerPerson: 10},
     {label: '$$', toolTip: "moderate", minPerPerson: 11, maxPerPerson: 20},
