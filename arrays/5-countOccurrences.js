@@ -1,5 +1,5 @@
 
-const numbers = [1, 2, 3, 4]; 
+const numbers = [1, 2, 3, 4, 1]; 
 
 const count = countOccurrences(numbers, 1); 
 

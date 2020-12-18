@@ -20,8 +20,16 @@ console.log(name);
 // JavaScript does not have decimal or floating point data types. Integers, floats, decimal are all of type: number.
 
 // Static typed language – variable data type cannot change
-// Dynamically-typed language – variable data type can change.
-// Type of variable determined at runtime based on value assigned to them.
+// Dynamically-typed language – variable data type can change. Type of variable determined at runtime based on value assigned to them.
+// Type Checking may occur either at compile-time (a static check) or at run-time (dynamic check).
+//   Common examples of statically-typed languages include Java, C, C++, FORTRAN, Pascal and Scala.
+//   Common examples of dynamically-typed languages includes JavaScript, Objective-C, PHP, Python, Ruby, Lisp, and Tcl.
+
+// A strongly-typed language is one in which variables are bound to specific data types, and will result in type errors 
+// if types do not match up as expected in the expression — regardless of when type checking occurs. Ex: Python & Java.
+// A weakly-typed language on the other hand is a language in which variables are not bound to a specific data type; 
+// they still have a type, but type safety constraints are lower compared to strongly-typed languages. Ex: C, PHP.
+
 
 //Constants 
 const interestRate = .03;

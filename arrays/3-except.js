@@ -1,7 +1,7 @@
 
 const numbers = [1, 2, 3, 4]; 
 
-const output = except(numbers, [1, 2]);
+const output = except(numbers, [1, 3]);
 
 console.log(output); 
 

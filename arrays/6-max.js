@@ -1,7 +1,7 @@
 
-const numbers = [1, 2, 3, 4]; 
+const numbers = [1, 2, 3, 4, 6, 8, 9.1]; 
 
-const max = getMax([]);
+const max = getMax(numbers);
 
 console.log(max); 
 
@@ -15,6 +15,9 @@ function getMax(array) {
   //     max = array[i];
 
   // return max; 
-
+  
+  //we do not intialize a, therefore, a is = to first element of array.
+  //the callback function iterates through the array and returns largest number.
   return array.reduce((a, b) => (a > b) ? a : b);
-}
+};
+
