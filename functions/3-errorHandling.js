@@ -1,7 +1,7 @@
 
 try {
-  const numbers = [1, 2, 3, 4]; 
-  const count = countOccurrences(null, 1); 
+  const numbers = [1, 2, 3, 4, 1, 1]; 
+  const count = countOccurrences(numbers, 1); 
   console.log(count); 
 }
 catch (e) {

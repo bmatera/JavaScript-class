@@ -1,7 +1,8 @@
 //Function Declaration
 //by convention do not terminate with semicolon, but no error if you add it.
 //Can call this function BEFORE its declaration in code b/c JavaScript moves
-//these functions to the top at runtime. This is call Hoisting. Not so w/Function Expression
+//these functions to the top at runtime. This is called Hoisting. Not so w/Function Expression
+//At runtime Javascript engine hoists to top of code all functions.
 walk();
 function walk() {
     console.log('walk');
@@ -38,7 +39,7 @@ function sum1(...args){    //args is an array. the ... is called Rest operator. 
 }
 console.log(sum1(1,2,3,4,5,7,8,9));
 
-//Another example: pass in discount and shopping cart items.
+//Another example: pass in discount and shopping cart items. Note, last arg needs to be Rest Operator.
 function cartTotal(discount, ...prices) {   //10% discount plus cart items.
     const total = prices.reduce((a,b) => a+b);
     return total - (discount * total);
@@ -73,9 +74,9 @@ const person = {
 person.fullName = 'John Smith';  //assignment like a property.
 console.log(person.fullName);
 
-//create object using class. Like a Java class. 
+//create object using class. Like a Java class. Mosh did not discuss, but picked up for web.
 //The person object does not have a constructor and not sure how to add one. 
-//This class below is a template for creating an object.
+//The class below is a template for creating an object, properties & methods.
 class Person {
     constructor (fName, lName) {
        this.fName = fName,
@@ -87,7 +88,7 @@ class Person {
     }
 
     set fullName(value) {
-        const parts = value.split(' ');
+        const parts = value.split(' '); //split string into array elements.
         this.fName = parts[0];
         this.lName = parts[1];
     }
@@ -129,14 +130,14 @@ catch (e) {
 console.log(person.fullName);  //Getter for fullName
 
 //local vs global scope
-//avoid defining global var and const as this can lead to bugs in programs
-//define within code blocks as part of function or conditional statement. 
+//avoid defining global variables and constants as this can lead to bugs in programs.
+//Define within code blocks as part of function or conditional statement. 
 //if defined globally, then data element available everywhere. however, if duplicate
-//local variable w/same name exists then local variable takes precedent.
+//local variable w/same name, then local variable takes precedent. Could lead to a bug.
 
 
 //let vs var
-//var is function scoped, meaning a variable still exists outside of code block. not typical for other languages
+//var is function scoped, meaning a variable still exists outside of code block. not like other languages.
 //let is code block scoped. Like other programing languages.
 function start() {
     for (var i=0; i<5; i++)   //change var to let and get error on second console.log(i)
@@ -162,7 +163,7 @@ sayHi();
 
 //'this' keyword - 'this' references the object that is executing the current function.
 //3 ways 'this' keyword can be used
-//1- If function is part of an object, we call it a method. Use of 'this' in method references object.
+//1- If function is part of an object, its called a method. Use of 'this' in method references object.
 //2- 'this' used in a function that is NOT part of object, then this references global object: window (chrome) or global (node)
 //3- 'this' used in a constructor function. Then 'this' will reference the new object
 
@@ -188,14 +189,14 @@ function playVideo() {
 playVideo();
 
 //example of 3 - 'this' used in a constructor function
-function Video(title) {
+function Video(title) {     //pascal case for constructor function
     this.title = title;
     console.log(this);
 }
 const v = new Video('b');  //creates a new object. 'this' references the new object.
 console.log(v);            //same output of line above. 'this' references that new object.
 
-//careful if using 'this' in callback function. It will not reference the object it's in, but rather the Global object
+//careful if using 'this' in callback function. It may not reference the object it's in, but rather the Global object
 //Listen to Mosh's explanation if needed.
 //bottom line, use arrow functions as they inherit the 'this' value from the containing function.
 //example:
@@ -204,7 +205,7 @@ const video1 = {
     tags: ['a','b','c'],
     showTags () {
         this.tags.forEach(tag => {
-            console.log(this.title, tag);   //'this' references video1 object b/c using arrow function.
+            console.log(this.title, tag);   //'this' references video1 object (not global windows obj) b/c using arrow function.
         });
     }
 };
